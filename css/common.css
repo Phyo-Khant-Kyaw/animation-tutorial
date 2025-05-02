@@ -1,81 +1,111 @@
 body {
-    margin: 0;
-    background: #111;
-    height: 100vh;
-    overflow: hidden;
-  }
+  margin: 0;
+  background: #111;
+  height: 100vh;
+  overflow: hidden;
+}
 
-  .main {
-    display: flex;
-    position: relative;
-  }
+.main {
+  display: flex;
+  position: relative;
+}
 
-  .container {
-    position: relative;
-    width: 100%;
-  }
+.container {
+  position: relative;
+  width: 100%;
+}
 
-  .layer {
-    height: 150px;
-    will-change: transform;
-    animation: floatUpDown 3s ease-in-out infinite;
-  }
+.layer {
+  height: 150px;
+  will-change: transform;
+  animation: floatUpDown 3s ease-in-out infinite;
+}
 
-  .layer2 {
-    animation-delay: 0.3s;
-  }
+.layer2 {
+  animation-delay: 0.3s;
+}
 
-  .layer3 {
-    animation-delay: 0.6s;
-  }
+.layer3 {
+  animation-delay: 0.6s;
+}
 
-  @keyframes floatUpDown {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-30px);
-    }
+@keyframes floatUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
   }
-
-  .rotate-right {
-    width: 80%;
-    height: 409px;
-    display: block;
+  50% {
+    transform: translateY(-30px);
   }
+}
 
-  .gp1, .gp2, .gp3, .gp4, .gp5 .gp6 .gp7 .gp8 .gp9 .gp10{
-    position: absolute;
-  }
+.rotate-right {
+  width: 80%;
+  height: 409px;
+  display: block;
+}
 
-  .gp1 { top: -16px; left: -65px;}
-  .gp2 { top: -30px; left: 37px;}
-  .gp3 { top: 0px; right: -56px; }
-  .gp4 { top: 70px; right: -126px; }
-  .gp5 { top: 128px; left: -125px; }
-  .gp6 { top: -60px; left: -5px; }
-  .gp7 { top: -119px; right: -105px; }
-  .gp8 { top: -264px; left: 238px; }
-  .gp9 { top: -411px; left: 0; }
-  .gp10 { top: 108px; left: 557px; }
+.gp1,
+.gp2,
+.gp3,
+.gp4,
+.gp5 .gp6 .gp7 .gp8 .gp9 .gp10 {
+  position: absolute;
+}
 
-  .row {
-    /* margin-top: 129px;
-    position: relative; */
-    background-color: aliceblue;
-  }
-  .scroll-wrapper {
-position: relative;
-width: 100vw;
-height: 100vh;
-overflow: auto;
+.gp1 {
+  top: -16px;
+  left: -65px;
+}
+.gp2 {
+  top: -30px;
+  left: 37px;
+}
+.gp3 {
+  top: 0px;
+  right: -56px;
+}
+.gp4 {
+  top: 70px;
+  right: -126px;
+}
+.gp5 {
+  top: 128px;
+  left: -125px;
+}
+.gp6 {
+  top: -60px;
+  left: -5px;
+}
+.gp7 {
+  top: -119px;
+  right: -105px;
+}
+.gp8 {
+  top: -264px;
+  left: 238px;
+}
+.gp9 {
+  top: -411px;
+  left: 0;
+}
+.gp10 {
+  top: 108px;
+  left: 557px;
+}
+
+.scroll-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
 }
 
 .draggable {
-cursor: grab;
-transition: transform 0.3s ease;
+  cursor: grab;
+  transition: transform 0.3s ease;
 }
 
 .draggable:active {
-cursor: grabbing;
+  cursor: grabbing;
 }
